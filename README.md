@@ -6,7 +6,7 @@ Aqui está a tradução do arquivo para o português brasileiro (pt-BR):
 
 Converta arquivos PDF, DOCX e XLSX para Markdown de forma segura através de uma interface web.
 
-## Início Rápido (Docker)
+## Início Rápido - Docker (melhor opção)
 
 ```bash
 docker build -t securedoc2md .
@@ -39,23 +39,6 @@ python run.py
 
 ```
 
-### Executar Testes
-
-```bash
-pytest tests/ -v
-
-```
-
-### Qualidade do Código
-
-```bash
-pip install ruff mypy bandit
-ruff check src/ tests/
-mypy src/
-bandit -r src/ --skip B101
-
-```
-
 ## Estrutura do Projeto
 
 ```
@@ -64,11 +47,6 @@ secure_doc2md/
 │   ├── security.py      # Validação de MIME, sanitização de nome de arquivo, segurança de caminho (path safety)
 │   ├── converter.py      # Wrapper do MarkItDown com execução em diretório temporário isolado
 │   └── web.py            # Interface web em Streamlit
-├── tests/
-│   ├── test_security.py
-│   ├── test_converter.py
-│   ├── test_web.py
-│   └── dummy_files/      # Arquivos de teste (fixtures)
 ├── Dockerfile
 ├── requirements.txt
 ├── pyproject.toml
