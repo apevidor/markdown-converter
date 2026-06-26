@@ -1,10 +1,7 @@
-Aqui está a tradução do arquivo para o português brasileiro (pt-BR):
-
----
-
 # SecureDoc2MD
 
 Converta arquivos PDF, DOCX e XLSX para Markdown de forma segura através de uma interface web.
+Obs: o resultado pode conter erros. Revise e, se for necessário, edite para correção.
 
 ## Início Rápido - Docker (melhor opção)
 
